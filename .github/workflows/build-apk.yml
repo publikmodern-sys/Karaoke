@@ -18,14 +18,15 @@ jobs:
           java-version: "21"
           distribution: "temurin"
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Accept Android SDK licenses and install SDK 36
         run: |
-          yes | sdkmanager --licenses >/dev/null 2>&1 || true
-          sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0"
-          sdkmanager "platforms;android-36.1" || true
+          SDK_MGR="$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f 2>/dev/null | head -n 1)"
+          if [ -z "$SDK_MGR" ]; then
+            SDK_MGR="$ANDROID_HOME/tools/bin/sdkmanager"
+          fi
+          yes | "$SDK_MGR" --licenses >/dev/null 2>&1 || true
+          "$SDK_MGR" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+          "$SDK_MGR" "platforms;android-36.1" || true
 
       - name: Prepare keystore and env files
         run: |
