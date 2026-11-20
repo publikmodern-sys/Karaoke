@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VocaStage</string>
+    <string name="studio_tagline">Studio Karaoke &amp; Mixing Vokal</string>
+    <string name="import_song">Impor Lagu Baru</string>
+    <string name="tab_tracks">Daftar Lagu</string>
+    <string name="tab_mixes">Hasil Mix MP3</string>
+    <string name="empty_tracks_title">Belum Ada Lagu Karaoke</string>
+    <string name="empty_tracks_desc">Pilih lagu MP3, WAV, atau M4A dari perangkatmu lalu tambahkan liriknya untuk mulai bernyanyi.</string>
+    <string name="empty_mixes_title">Belum Ada Rekaman</string>
+    <string name="empty_mixes_desc">Pilih salah satu lagu dan tekan tombol Rekam untuk menghasilkan mixing vokal jernih berformat MP3.</string>
+    <string name="permission_mic_title">Izin Mikrofon Diperlukan</string>
+    <string name="permission_mic_desc">VocaStage membutuhkan akses mikrofon untuk merekam suaramu secara sinkron dengan musik.</string>
+    <string name="grant_mic_permission">Izinkan Mikrofon</string>
+</resources>

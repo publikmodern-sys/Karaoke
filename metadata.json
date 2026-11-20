@@ -1,0 +1,6 @@
+{
+  "name": "VocaStage",
+  "description": "Aplikasi studio karaoke dan mixing vokal jernih dengan perekaman audio presisi, efek DSP, lirik sinkron, dan ekspor MP3 berkualitas tinggi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
